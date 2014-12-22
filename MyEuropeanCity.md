@@ -1,0 +1,55 @@
+MyEuropeanCity
+========================================================
+author: Julien
+date: 12/21/2014
+
+Getting started
+========================================================
+
+The **MyEuropeanCity** application uses the data from the `eurodist` dataset. The data is a simple matrix that gives the road distances, in km, between 21 European cities. Here are the cities:
+
+
+```
+ [1] "Athens"          "Barcelona"       "Brussels"       
+ [4] "Calais"          "Cherbourg"       "Cologne"        
+ [7] "Copenhagen"      "Geneva"          "Gibraltar"      
+[10] "Hamburg"         "Hook of Holland" "Lisbon"         
+[13] "Lyons"           "Madrid"          "Marseilles"     
+[16] "Milan"           "Munich"          "Paris"          
+[19] "Rome"            "Stockholm"       "Vienna"         
+```
+
+
+What calculation does MyEuropeanCity does?
+========================================================
+
+The application computes, for the city selected in the combobox, the following metrics:
+
+- The average of the distance to other cities
+- Its standard deviation
+- The boxplot of its distribution
+
+This is done using standard `R` functions.
+
+The application also provides a map of Europe, with markers for each city in the `eurodist` dataset. The color of the marker changes with the distance to the city picked by the user.
+
+Fun time
+========================================================
+
+Try to guess which city is the closest to the others!
+
+Which one should it be?
+
+1. Barcelona
+2. Lyons
+3. London
+4. Brussels
+
+
+
+
+Answer
+================================
+
+It is Lyons!
+
